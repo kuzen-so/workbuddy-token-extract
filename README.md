@@ -18,7 +18,9 @@ https://github.com/kuzen-so/workbuddy-token-extract
 
 > 帮我提取 WorkBuddy 的 refreshToken
 
-流程约 30~60 秒，期间客户端会自动重启两次，聊天记录不受影响。结果保存在 `~/Desktop/workbuddy-token/refresh-token.txt`。
+WorkBuddy 会自动完成前置检查（Node / 登录态）、把脚本放到 `~/Desktop/workbuddy-token/`，并给你一条运行命令。
+
+**因为提取需要重启 WorkBuddy 客户端，最后一步需要你自己打开「终端」粘贴运行**（Agent 不能替你跑，否则客户端退出会中断流程）。约 30 秒，客户端自动重启两次，聊天记录不受影响。结果保存在 `~/Desktop/workbuddy-token/refresh-token.txt`，回到对话里 WorkBuddy 会帮你验证结果。
 
 ## 前提
 
